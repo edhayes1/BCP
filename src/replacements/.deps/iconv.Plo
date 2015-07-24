@@ -1,0 +1,5 @@
+iconv.lo: iconv.c /usr/include/stdc-predef.h ../../include/config.h
+
+/usr/include/stdc-predef.h:
+
+../../include/config.h:
