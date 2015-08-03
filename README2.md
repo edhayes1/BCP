@@ -73,12 +73,15 @@ you must configure the connection string in odbcconnect.txt.
 comment out (hash) any connection strings you do not want the program to use.
 For SQL Server, the driver specified must be FreeTDS:
 
-1,DRIVER={FreeTDS};Server="SERVER IP";Database=master;UID="USERNAME";PWD="PASSWORD";TDS_Version=8.0;Port="PORT";
-
+```
+1,DRIVER={FreeTDS};Server="SERVER_IP";Database=master;UID="USERNAME";PWD="PASSWORD";TDS_Version=8.0;Port="PORT";
+```
 
 For MYSQL Server, the driver specified must be MySQL:
 
-2,DRIVER={MySQL};Server="SERVER IP";DATABASE=mysql;Uid="USERNAME";PWD="PASSWORD";PORT="PORT";
+```
+2,DRIVER={MySQL};Server="SERVER_IP";DATABASE=mysql;Uid="USERNAME";PWD="PASSWORD";PORT="PORT";
+```
 
 ### Final notes 
 
