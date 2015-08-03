@@ -58,7 +58,7 @@ sudo updatedb && locate libtdsodbc.so
 
 ```
 
-/etc/odbcinst.ini  
+/etc/odbcinst.ini    
 ...
 
 [ODBC]  
@@ -68,6 +68,7 @@ TraceFile = /tmp/odbc.log
 Description = Free TDS driver   
 Driver = "DRIVER LOCATION"   
 
+...
 ```
 
  
