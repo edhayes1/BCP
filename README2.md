@@ -125,15 +125,21 @@ For SQL Server, the driver specified must be FreeTDS:
 
 For MYSQL Server, the driver specified must be MySQL:
 
- 
-
 ```
 
 2,DRIVER={MySQL};Server="SERVER_IP";DATABASE=mysql;Uid="USERNAME";PWD="PASSWORD";PORT="PORT";
 
 ```
 
- 
+### Recompilation
+
+you should already have the necessary libraries needed to recompile the code should you need to:
+
+```
+g++ -std=c++11 gendataara.cpp -o gendataara -lodbc
+```
+
+this command is also in compile.sh, for convenience.
 
 ### Final notes
 
@@ -143,6 +149,6 @@ Please note the numbers at the beginning of the string, this is important, numbe
 
  
 
-run.sh contains a sample line for running gendata, please do reconfigure your own. (./gendata -h will give possible parameters)
+run.sh contains a sample line for running gendata, please do reconfigure your own. (./gendataara -h will give possible parameters)
 
  
