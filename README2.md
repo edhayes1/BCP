@@ -98,7 +98,6 @@ $ sudo updatedb && locate libmyodbc.so
  
 ```
 /etc/odbcinst.ini:  
-
 ...  
 
 [MySQL]  
