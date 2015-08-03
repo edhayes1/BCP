@@ -17,9 +17,7 @@ unixODBC and unixODBC-dev:
  
 
 ```
-
 $ sudo apt-get install unixODBC unixODBC-dev
-
 ```
 
  
@@ -33,9 +31,7 @@ you'll probably be using FreeTDS to connect to sqlserver (the microsoft driver h
  
 
 ```
-
 $ sudo apt-get install tdsodbc
-
 ```
 
  
@@ -49,7 +45,6 @@ to find the location you can always run:
  
 
 ```
-
 sudo updatedb && locate libtdsodbc.so
 
 ```
