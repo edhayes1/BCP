@@ -2,8 +2,6 @@
 
 Gendata downloads data from the server to the client.
 
-### Instructions
-
 ## Linux installation:
 ### Prerequisites: 
 
@@ -33,12 +31,16 @@ sudo updatedb && locate libtdsodbc.so
 ...
 
 [ODBC]
+
 Trace = Yes
+
 TraceFile = /tmp/odbc.log
 
 [FreeTDS]
+
 Description = Free TDS driver
-Driver = <DRIVER LOCATION>
+
+Driver = "DRIVER LOCATION"
 
 …
 
@@ -58,20 +60,25 @@ $ sudo updatedb && locate libmyodbc.so
 ...
 
 [MySQL]
+
 Description = ODBC for MySQL
-Driver = <DRIVER LOCATION>
+
+Driver = "DRIVER LOCATION"
+
 FileUsage = 1
+
+...
 
 you must configure the connection string in odbcconnect.txt.
 comment out (hash) any connection strings you do not want the program to use.
 For SQL Server, the driver specified must be FreeTDS:
 
-1,DRIVER={FreeTDS};Server=<SERVER IP>;Database=master;UID=<USERNAME>;PWD=<PASSWORD>;TDS_Version=8.0;Port=<PORT>;
+1,DRIVER={FreeTDS};Server="SERVER IP";Database=master;UID="USERNAME";PWD="PASSWORD";TDS_Version=8.0;Port="PORT";
 
 
 For MYSQL Server, the driver specified must be MySQL:
 
-2,DRIVER={MySQL};Server=<SERVER IP>;DATABASE=mysql;Uid=<USERNAME>;PWD=<PASSWORD>;PORT=<PORT>;
+2,DRIVER={MySQL};Server="SERVER IP";DATABASE=mysql;Uid="USERNAME";PWD="PASSWORD";PORT="PORT";
 
 ### Final notes 
 
