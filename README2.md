@@ -125,6 +125,7 @@ For MYSQL Server, the driver specified must be MySQL:
 2,DRIVER={MySQL};Server="SERVER_IP";DATABASE=mysql;Uid="USERNAME";PWD="PASSWORD";PORT="PORT";
 
 ```
+Please note the numbers at the beginning of the string, this is important, number 1 indicates SQL Server configuration, number 2 indicates MYSQL Server.
 
 ### Recompilation
 
@@ -137,12 +138,6 @@ g++ -std=c++11 gendataara.cpp -o gendataara -lodbc
 this command is also in compile.sh, for convenience.
 
 ### Final notes
-
- 
-
-Please note the numbers at the beginning of the string, this is important, number 1 indicates SQL Server configuration, number 2 indicates MYSQL Server.
-
- 
 
 run.sh contains a sample line for running gendata, please do reconfigure your own. (./gendataara -h will give possible parameters)
 
