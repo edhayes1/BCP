@@ -46,13 +46,11 @@ to find the location you can always run:
 
 ```
 sudo updatedb && locate libtdsodbc.so
-
 ```
 
  
 
 ```
-
 /etc/odbcinst.ini    
 ...
 
@@ -71,7 +69,6 @@ Driver = "DRIVER LOCATION"
 ### MySQL Server configuration:
 
 ```
-
 $ sudo apt-get install libmyodbc
 
 ```
@@ -85,7 +82,6 @@ these may change depending on your own congfiguration.
 to find the location you can always run:
 
 ```
-
 $ sudo updatedb && locate libmyodbc.so
 
 ```
@@ -111,7 +107,6 @@ For SQL Server, the driver specified must be FreeTDS:
  
 
 ```
-
 1,DRIVER={FreeTDS};Server="SERVER_IP";Database=master;UID="USERNAME";PWD="PASSWORD";TDS_Version=8.0;Port="PORT";
 
 ```
@@ -121,7 +116,6 @@ For SQL Server, the driver specified must be FreeTDS:
 For MYSQL Server, the driver specified must be MySQL:
 
 ```
-
 2,DRIVER={MySQL};Server="SERVER_IP";DATABASE=mysql;Uid="USERNAME";PWD="PASSWORD";PORT="PORT";
 
 ```
