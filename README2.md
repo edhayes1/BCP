@@ -70,7 +70,6 @@ Driver = "DRIVER LOCATION"
 
 ```
 $ sudo apt-get install libmyodbc
-
 ```
 
  
@@ -83,7 +82,6 @@ to find the location you can always run:
 
 ```
 $ sudo updatedb && locate libmyodbc.so
-
 ```
 
  
@@ -108,7 +106,6 @@ For SQL Server, the driver specified must be FreeTDS:
 
 ```
 1,DRIVER={FreeTDS};Server="SERVER_IP";Database=master;UID="USERNAME";PWD="PASSWORD";TDS_Version=8.0;Port="PORT";
-
 ```
 
  
@@ -117,7 +114,6 @@ For MYSQL Server, the driver specified must be MySQL:
 
 ```
 2,DRIVER={MySQL};Server="SERVER_IP";DATABASE=mysql;Uid="USERNAME";PWD="PASSWORD";PORT="PORT";
-
 ```
 Please note the numbers at the beginning of the string, this is important, number 1 indicates SQL Server configuration, number 2 indicates MYSQL Server.
 
